@@ -33,18 +33,22 @@
   top: 95px;
 }
 
-table, td, th {
+td, th {
 
     background-color: floralwhite;  
     color: tomato;
     font-family: sans-serif;
     font-size: 15px;     
     font-weight: 90;
-    text-align: left;
+    text-align: center;
     
     border: 2px;
     border-style: solid;
     border-color: black;
+}
+
+table {
+      margin-left: 400px;
 }
 
 
@@ -52,10 +56,11 @@ header {
     color: black; 
     font-family: sans-serif;  
     font-size: 30px;      
-    text-align: left;
+    text-align: center;
+    margin-bottom: 30px;
 }
 
-#gdn_zdj {
+.zdjecie {
     display: inline-block;
     position: relative;
     width: 15%;
@@ -63,20 +68,19 @@ header {
     margin-left: 23px;
 }
 
+.prognoza {
+    font-style: italic;
+}
+
+#czas {
+    font-weight: bold;
+}
+
 #strzalka {
     display: inline-block;
     position: relative;
     width: 5%;
     height: 5%;
-    margin-left: 140px;
-}
-
-#wro_zdj {
-    display: inline-block;
-    position: relative;
-    width: 15%;
-    height: 15%;
-    margin-left: 10px;
 }
 
 #tytul_tabeli {
@@ -87,9 +91,8 @@ header {
 }
 
 #boeing {
-    width: 50%;
-    height: 50%;
-    
+    height: 100px;
+   width: 200px;
 }
 
 body {

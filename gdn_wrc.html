@@ -4,58 +4,61 @@
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Lista lotow</title>
+    <title>Szczegóły lotu</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
     <script src='main.js'></script>
 </head>
 
 <body>
-    <header>Strona lotu z </header>
-    <div class="gdansk">
-    <a href="https://pl.wikipedia.org/wiki/Gda%C5%84sk">Gdańska</a>
-    <img id="gdn_zdj" src="gdansk.jpg" alt="gdn">
-    pogoda: 13 stopni i deszcz
-    </div>
-    <p>
-        <img id="strzalka" src="strzlka.jpg" alt="strz">
-        2.5h
-    </p>
-    <div class="wroclaw">
-    <a href="https://pl.wikipedia.org/wiki/Wroc%C5%82aw">Wrocławia</a>
-    <img id="wro_zdj" src="wroclaw.jpg" alt="wro">
-    pogoda: 17 stopni, bezchmurne niebo
+    <header>Szczegóły lotu</header>
+
+    <div class="miasto">
+        <img class="zdjecie" src="gdansk.jpg" alt="Zdjęcie miasta Gdańsk">
+        <a href="https://pl.wikipedia.org/wiki/Gda%C5%84sk">Gdańsk</a>
+        <span class="prognoza">13 stopni, deszcz</span>
     </div>
 
     <div>
-        <p id="tytul_tabeli">Samolot</p>
+        <img class="zdjecie" src="strzlka.jpg" alt="Czarna strzałka skierowana w dół.">
+        <span id="czas">2.5h</span>
+    </div>
+
+    <div class="miasto">
+        <img class="zdjecie" src="wroclaw.jpg" alt="Zdjęcie miasta Wrocław">
+        <a href="https://pl.wikipedia.org/wiki/Wroc%C5%82aw">Wrocław</a>
+        <span class="prognoza"> 17 stopni, bezchmurne niebo</span>
+    </div>
+
+    <div>
+        <h2 id="tytul_tabeli">Samolot</h2>
         <table>
             <tr>
                 <th>typ
                 <th>l. miejsc
-                <th >zdjęcie
+                <th>zdjęcie
             </tr>
             <tr>
                 <td>Boeing 747</td>
                 <td>747</td>
-                <td><img id="boeing" src="boeing.jpg" alt="boe"></td>
+                <td><img id="boeing" src="boeing.jpg" alt="Zdjcie samolotu Boeing 747"></td>
             </tr>
         </table>
     </div>
 
-    <div class="lista">
-        <p id="tytul_list">Lista pasażerów: </p>
-        <ul>
+    <div>
+        <h2 id="tytul_listy">Lista pasażerów: </h2>
+        <ol>
             <li>Jasio Jasiński</li>
             <li>Marysia Mariańska</li>
             <li>Tomek Tymański</li>
             <li>Ala Alińska</li>
-        </ul>
+        </ol>
     </div>
 
     <form action="plik.html">
         <input type="submit" value="Powrót"><br>
-        </form>
+    </form>
 
     <footer>Autor: Krzysztof Sota</footer>
 
