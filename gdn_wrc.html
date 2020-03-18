@@ -11,53 +11,39 @@
 </head>
 
 <body>
-    <header>Szczegóły lotu</header>
+    <header>Szczegóły lotu pomiędzy miastami</header>
 
-    <div class="miasto">
-        <img class="zdjecie" src="gdansk.jpg" alt="Zdjęcie miasta Gdańsk">
-        <a href="https://pl.wikipedia.org/wiki/Gda%C5%84sk">Gdańsk</a>
-        <span class="prognoza">13 stopni, deszcz</span>
-    </div>
+    <article class="lot">
+        <article class="miasto">
+            <img class="zdjecie" src="gdansk.jpg" alt="Zdjęcie miasta Gdańsk">
+            <a href="https://pl.wikipedia.org/wiki/Gda%C5%84sk">Gdańsk</a>
+            <span class="prognoza">13 stopni, deszcz</span>
+        </article>
 
-    <div>
-        <img class="zdjecie" src="strzlka.jpg" alt="Czarna strzałka skierowana w dół.">
-        <span id="czas">2.5h</span>
-    </div>
+        <article class="miasto">
+            <img class="zdjecie" src="wroclaw.jpg" alt="Zdjęcie miasta Wrocław">
+            <a href="https://pl.wikipedia.org/wiki/Wroc%C5%82aw">Wrocław</a>
+            <span class="prognoza"> 17 stopni, bezchmurne niebo</span>
+        </article>
 
-    <div class="miasto">
-        <img class="zdjecie" src="wroclaw.jpg" alt="Zdjęcie miasta Wrocław">
-        <a href="https://pl.wikipedia.org/wiki/Wroc%C5%82aw">Wrocław</a>
-        <span class="prognoza"> 17 stopni, bezchmurne niebo</span>
-    </div>
+        <article class="szczegolu_lotu">
+            <p>Lot odbędzie się w samolocie typu Boeing 747, mieszczącym 1024 osoby. Potrwa 2.5 godziny.</p>
+            <img class="zdjecie" src="boeing.jpg" alt="Zdjcie samolotu Boeing 747">
+        </article>
+    </article>
 
-    <div>
-        <h2 id="tytul_tabeli">Samolot</h2>
-        <table>
-            <tr>
-                <th>typ
-                <th>l. miejsc
-                <th>zdjęcie
-            </tr>
-            <tr>
-                <td>Boeing 747</td>
-                <td>747</td>
-                <td><img id="boeing" src="boeing.jpg" alt="Zdjcie samolotu Boeing 747"></td>
-            </tr>
-        </table>
-    </div>
-
-    <div>
-        <h2 id="tytul_listy">Lista pasażerów: </h2>
+    <article class="lista_pasazerow">
+        <h1 id="tytul_listy">Lista pasażerów: </h1>
         <ol>
             <li>Jasio Jasiński</li>
             <li>Marysia Mariańska</li>
             <li>Tomek Tymański</li>
             <li>Ala Alińska</li>
         </ol>
-    </div>
+    </article>
 
     <form action="plik.html">
-        <input type="submit" value="Powrót"><br>
+        <button type="submit" value="Powrót">Powrót</button>
     </form>
 
     <footer>Autor: Krzysztof Sota</footer>
