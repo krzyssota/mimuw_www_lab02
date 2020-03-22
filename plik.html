@@ -12,14 +12,105 @@
 
 <body>
 
-    <header>Jest to lista lotow </header>
-    <img id="logo" src="logo.png" alt="logo firmy">
+    <header>Jest to lista lotow
+        <img id="logo" src="logo.png" alt="logo firmy">
+    </header>
+
+    <h1 id="sekcje">Sekcje: </h1>
+    <nav class="menu">
+        <ul>
+            <h2 class="tytul_sekcji">Oferta</h2>
+            <nav class="oferta">
+                <li><a href="oferta/prywatne.html">detaliczna</a><br>
+                <li><a href="oferta/biznes.html">biznesowa</a>
+            </nav>
+            <h2 class="tytul_sekcji">Zasady</h2>
+            <nav class="zasady">
+                <li><a href="zasady/reklamacje.html">reklamacji</a><br>
+                <li><a href="zasady/zwroty.html">zwrotów</a>
+            </nav>
+            <h2 class="tytul_sekcji">Pozostałe</h2>
+            <nav class="pozostale">
+                <li><a href="konto.html">Konto pasażera</a><br>
+                <li><a href="wyszukiwarka.html" id=>Wyszukaj lot</a><br>
+                <li><a href="covid.html">Aktualności związane z Koronawirusem</a><br>
+                <li><a href="rekrutacja.html">Zostań pracownikiem naszych linii</a><br>
+                <li><a href="kontakt.html">Kontakt</a><br>
+            </nav>
+        </ul>
+    </nav>
+
+    <table class="opoznienia">
+        <tr class="naglowek_tabeli">
+            <th>Odlot</th>
+            <th>Przylot</th>
+            <th>Data</th>
+            <th>Opóźnienie</th>
+        </tr>
+        <tr>
+            <td>Warszawa</td>
+            <td>Londyn</td>
+            <td>25.03</td>
+            <td>1.5h</td>
+        </tr>
+        <tr>
+            <td>Londyn</td>
+            <td>Paryż</td>
+            <td>25.03</td>
+            <td>3h</td>
+        </tr>
+        <tr>
+            <td>Paryż</td>
+            <td>Barcelona</td>
+            <td>25.03</td>
+            <td>6h</td>
+        </tr>
+        <tr>
+            <td>Barcelona</td>
+            <td>Madryt</td>
+            <td>25.03</td>
+            <td>12h</td>
+        </tr>
+        <tr>
+            <td>Madryt</td>
+            <td>Miami</td>
+            <td>25.03</td>
+            <td>24h</td>
+        </tr>
+        <tr>
+            <td>Miami</td>
+            <td>San Francisco</td>
+            <td>25.03</td>
+            <td>48h</td>
+        </tr>
+        <tr>
+            <td>San Francisco</td>
+            <td>Kyoto</td>
+            <td>25.03</td>
+            <td>72h</td>
+        </tr>
+        <tr>
+            <td>Kyoto</td>
+            <td>New Dehli</td>
+            <td>25.03</td>
+            <td>1.5h</td>
+        </tr>
+        
+        <tr>
+            <td>New Dehli</td>
+            <td>Erywań</td>
+            <td>25.03</td>
+            <td>1.5h</td>
+        </tr>
+
+
+    </table>
 
     <div>
         <p id="trzeci">Ale super lot!</p>
 
-        <table>
-            <tr>
+        <table class="loty">
+            <tr class="naglowek_tabeli">
                 <th>nr
                 <th>skad
                 <th>dokad
@@ -42,7 +133,6 @@
             </tr>
         </table>
     </div>
-
 
     <footer>Autor: Krzysztof Sota</footer>
 
