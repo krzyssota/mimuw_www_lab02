@@ -1,9 +1,8 @@
 #logo {
     display: inline-block;
     position: relative;
-    width: 30%;
-    margin-top: 20px;
-    margin-bottom: -30px;
+    width: 20%;
+    margin-bottom: -45px;
 }
 
 #pierwszy {
@@ -43,6 +42,7 @@ table {
     border: 2px;
     border-style: solid;
     border-color: black;
+    margin: 15px;
 }
 
 .naglowek_tabeli {
@@ -93,14 +93,27 @@ footer {
     width: 100%;
 }
 
-#sekcje {
+#tytul_nawigacji {
     font-size: 25px;
     font-family: sans-sefir;
     font-weight: normal;
     margin: 4px 4px;
 }
-ul {
+.lista_sekcji {
+    margin-left: 10px;
+    padding-left: 10px;
     list-style: none;
+}
+.lista_podstron {
+    margin-left: 20px;
+    padding-left: 20px;
+    list-style: none;
+    font-family: Arial;
+}
+a:link, a:visited{
+     color: blueviolet;
+    text-transform: uppercase;
+    text-decoration: none;
 }
 
 .tytul_sekcji {
@@ -109,6 +122,24 @@ ul {
     font-size: 18px;
 }
 
-a {
-    color: blueviolet;
+.content_container {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+}
+.opoznienia td {
+    border: 10px 
+}
+.odwolany {
+    background-color: red;
+    color: black;
+    font-weight: bold;
+}
+.lekko_opozniony {
+    background-color: yellow;
+    color: black;
+}
+.bardzo_opozniony {
+    background-color: orange;
+    color: black;
 }
