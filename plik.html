@@ -17,7 +17,7 @@
     </header>
 
     <section class="content_container">
-        
+
         <nav class="menu">
             <h1 id="tytul_nawigacji">Sekcje: </h1>
             <ul class="lista_sekcji">
@@ -40,9 +40,9 @@
                     <ul class="lista_podstron">
                         <li><a href="konto.html">Konto pasażera</a><br>
                         <li><a href="wyszukiwarka.html" id=>Wyszukaj lot</a><br>
-                        <li><a href="covid.html">Aktualności związane z Koronawirusem</a><br>
+                        <li><a href="https://www.gov.pl/web/zdrowie/co-musisz-wiedziec-o-koronawirusie">Aktualności związane z Koronawirusem</a><br>
                         <li><a href="rekrutacja.html">Zostań pracownikiem naszych linii</a><br>
-                        <li><a href="kontakt.html">Kontakt</a><br>
+                        <li><a href="#contact_info">Kontakt do twórcy strony</a><br>
                     </ul>
                 </nav>
             </ul>
@@ -143,7 +143,23 @@
         </div>
     </section>
 
-    <footer>Autor: Krzysztof Sota</footer>
+    <section class="interaction_container">
+        <form action="/zrob_rezerwacje.html" method="POST">
+            <label>Imie: <input type="text" name="imie" id="imie" required></label><br>
+            <label>Nazwisko: <input type="text" name="nazwisko" id="nazwisko" required></label><br>
+            <label>Data:</label><br>
+            <input type="date" id="data_lotu" name="data_lotu" value="2020-03-23" min="2020-03-23" max="2020-12-31">
+            <li class="button">
+                <button type="reset">Zresetuj</button>
+              </li>
+            <li class="button">
+                <button type="submit">Zarezerwuj</button>
+              </li>
+        </form>
+    </section>
+    
+
+    <footer id="contact_info">Autor: Krzysztof Sota john.smith@gmail.com</footer>
 
 </body>
 
