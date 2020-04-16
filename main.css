@@ -3,12 +3,13 @@
     background-color: grey;
     font-size: 40px;
     font-weight: bold;
+    margin: 0 0 0 0;
     width: 100%;
     height: 100%;
     opacity: 0.9;
     text-align: center;
     vertical-align: middle;
-    z-index: 1;
+    z-index: 2;
     border: 3px solid black;   
 }
 .tresc_potwierdzenie {
@@ -19,8 +20,8 @@
 
 .content_container {
     display: grid;
-    grid-template-rows: auto;
-    grid-template-columns: 200px 3fr 1fr;
+    grid-template-rows: 150px auto;
+    grid-template-columns: 200px 5fr 1fr;
     grid-row-gap: 0;
     grid-column-gap: 15px;
     grid-template-areas: 
@@ -44,12 +45,15 @@ header {
 
 #opoznienia {
     grid-area: delays;
+    table-layout: fixed;
     justify-self: stretch;
+    word-break: break-all;
 }
 
-#flights {
+#loty {
     grid-area: flights;
-    justify-self: stretch;
+    table-layout: fixed ;
+    word-break: break-all;
 }
 
 #reservation_form {
@@ -77,9 +81,10 @@ footer {
 
 #trzeci {
     background-color: slategray;
-    width: 120px;
+    visibility: hidden;
+    width: 70px;
     position: relative;
-    left: 930px;
+    left: 600px;
     top: 82px;
 }
 
@@ -93,13 +98,12 @@ table {
     border: 2px;
     border-style: solid;
     border-color: black;
-    margin: 15px 15px 5px 5px;
     width: 100%;
 }
 
 .naglowek_tabeli {
     border-bottom: 1px solid black;
-    margin-left: 400px;
+    /*margin-left: 400px;*/
 }
 
 .zdjecie {
@@ -122,18 +126,18 @@ button {
 }
 
 body {
-    max-width: 1960px;
+    /*max-width: 1960px;*/
     background-color: beige;
     text-align: left;
-    display: inline-block;
-    margin-left: 23px;
+    /*display: inline-block;*/
+    /*margin-left: 23px;*/
 }
 
 #tytul_nawigacji {
     font-size: 25px;
     font-family: sans-sefir;
     font-weight: normal;
-    margin: 4px 4px;
+    /*margin: 4px 4px;*/
 }
 .lista_sekcji {
     margin-left: 10px;
@@ -197,12 +201,6 @@ nav :link{
     color: black;
 }
 
-.interaction_container {
-    display: flex;
-    justify-content: center;
-    align-items: baseline;
-    font-size: 10px;
-}
 
 @media screen and (max-width: 1024px) {
     .content_container {
@@ -235,8 +233,9 @@ nav :link{
     }
 
     #reservation_form {
+        display: flex;
         grid-area: reservation;
-        margin-top: 30px;
+        /*margin-top: 30px;*/
     }
 
     footer {
